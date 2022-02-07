@@ -1,0 +1,25 @@
+name: "Todo Tracker"
+description: "Creates issues based on 'TODO' comments in code."
+inputs:
+  config-file:
+    description: "The path to the config file."
+    required: false
+    default: "todo-tracker.yaml"
+  github-token:
+    description: "An access token to create issues in GITHUB."
+    required: true
+  path:
+    description: "The path to the repository."
+    required: true
+  owner:
+    description: "The owner of the repository's username."
+    required: true
+  repo:
+    description: "The name of the repository."
+    required: true
+  ref:
+    description: "The ref of the repository."
+    required: true
+runs:
+  using: 'node16'
+  main: "dist/index.js"

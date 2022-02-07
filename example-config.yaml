@@ -1,0 +1,7 @@
+rules:
+  - titleFormat: "TODO: {FILE} - {COMMENT}"
+    include:
+    - "service.api/*.go"
+    labels:
+    - "api"
+    - "todo"
